@@ -1,7 +1,21 @@
 # trim-and-replace
 .net c# trim and replace
+using System;
+using System.Text.RegularExpressions;
 
+class program 
+{    
+//TrimReplaceRegex
+    static void Main()
+    {        
+		// for .cs --  
+		
+		// Response.Write(Regex.Replace("....''' jitendra singh sengar  9589391358 ****'".Trim('*', '.', '\'', ' ').Replace("\'", ""), @"\d", ""));  
+		
+		Console.WriteLine(Regex.Replace("....''' jitendra singh sengar  9589391358 ****'".Trim('*', '.', '\'', ' ').Replace("\'", ""), @"\d", ""));
+		
+    }
+}
 
-Response.Write("....''' jitendra singh sengar ****'".Trim('*', '.', '\'', ' ').Replace("\'", ""));
-
-// 
+//Output
+//jitendra singh sengar
